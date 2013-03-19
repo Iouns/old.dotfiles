@@ -7,6 +7,11 @@ Here is my dotfiles for :
  * vim : plugins..
  * git
 
+## Clone main repository
+```
+git clone --recursive git://github.com/Iouns/dotfiles.git
+```
+
 ## Installation :
 
 Start the deploy.sh script, it will show you potential modifications :
