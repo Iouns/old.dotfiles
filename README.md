@@ -1,20 +1,20 @@
 # Dotfiles repository
 Here is my basic dotfiles for fun & profit. :)
 
-## Basic actions :
+## Basic actions
 Here is my dotfiles for :
  * bash : bashrc, aliases..
  * vim : plugins..
  * git
 
-## Clone main repository
+## Installation
+
+Clone main repository and linked submodules:
 ```
 git clone --recursive git://github.com/Iouns/dotfiles.git
 ```
 
-## Installation :
-
-Start the deploy.sh script, it will show you potential modifications :
+Start the deploy.sh script, it will show you potential modifications:
 ```
 iouns@hostname:[dotfiles]$ ./deploy.sh 
 >f+++++++++ .bash_aliases
@@ -22,7 +22,7 @@ iouns@hostname:[dotfiles]$ ./deploy.sh
 >f+++++++++ .bashrc
 ```
 
-Once changes are reviewed, choose to apply them or not :
+Once changes are reviewed, choose to apply them or not:
 ```
 Deploy dotfiles to => /home/iouns? [y/N]y
 >f+++++++++ .bash_aliases
