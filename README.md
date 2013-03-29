@@ -1,11 +1,12 @@
-# Dotfiles repository
-Here is my basic dotfiles for fun & profit. :)
+# Dotfiles (Iouns)
+Here is my basic dotfiles for fun. :)
 
 ## Basic actions
 Here is my dotfiles for :
- * bash : bashrc, aliases..
- * vim : plugins..
- * git
+ * bash, zsh..
+ * tmux
+ * vim plugins
+ * gitconfig
 
 ## Installation
 
