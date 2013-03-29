@@ -27,6 +27,9 @@ ZSH_THEME="agnoster"
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
 
+# Load lesspipe
+[ -x /usr/bin/lesspipe.sh  ] && eval "$(lesspipe.sh)"
+
 # Load ls colors
 eval `dircolors $HOME/.dircolors`
 
