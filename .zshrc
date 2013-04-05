@@ -6,10 +6,9 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-
 ZSH_THEME="agnoster"
-#ZSH_THEME="af-magic"
-
+# hide the “user@hostname” when logged in as yourself on your local machine.
+DEFAULT_USER="iouns"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
