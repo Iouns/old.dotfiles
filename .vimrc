@@ -27,10 +27,40 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
+"filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+
+" original repos on github
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+Bundle 'Lokaltog/powerline'
+Bundle 'msanders/snipmate.vim'
+Bundle 'rodjek/vim-puppet'
+Bundle 'scrooloose/syntastic.git'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+" non github repos
+"Bundle 'git://git.wincent.com/command-t.git'
+
+let g:Powerline_symbols = 'fancy'
+
 " Load pathogen plugin
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+"runtime bundle/pathogen/autoload/pathogen.vim
+"call pathogen#infect()
+"call pathogen#helptags()
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -70,10 +100,10 @@ set laststatus=2
 " Terminal 256 colors
 set t_Co=256
 
+colorscheme solarized
 " Solarized theme options
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-colorscheme solarized
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
