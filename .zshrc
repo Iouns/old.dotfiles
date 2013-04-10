@@ -14,6 +14,10 @@ DEFAULT_USER="iouns"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export EDITOR="vim"
+export LANG="fr_FR.UTF-8"
+export TERM="xterm-256color"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
