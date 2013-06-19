@@ -49,5 +49,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+unsetopt correct_all
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java6/bin:/opt/java6/db/bin:/opt/java6/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/qt4/bin
