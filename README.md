@@ -31,12 +31,17 @@ Deploy dotfiles to => /home/iouns? [y/N]y
 >f+++++++++ .bashrc
 ```
 
-### to enable vim plugins :
+### Install vim plugins :
 ```
 vim +BundleInstall +qall
 ```
 
-### to use oh-my-zsh :
+### Install powerline enabled fonts on archlinux :
+```
+sudo yaourt -S aur/otf-inconsolata-dz-powerline-git
+```
+
+### If you want to use oh-my-zsh :
 [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
 ```
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
