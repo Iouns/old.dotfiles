@@ -3,8 +3,8 @@ Here is my basic dotfiles for fun. :)
 
 ## Basic actions
 Here is my dotfiles for :
- * bash, zsh..
- * tmux
+ * bash & zsh
+zsh:1: command not found: q
  * vim plugins
  * gitconfig
 
@@ -31,18 +31,20 @@ Deploy dotfiles to => /home/iouns? [y/N]y
 >f+++++++++ .bashrc
 ```
 
-### Install vim plugins :
+### Install vim plugins:
 ```
 vim +BundleInstall +qall
 ```
+source: [Gmarik: vundle vim plugin](https://github.com/gmarik/vundle)
 
-### Install powerline enabled fonts on archlinux :
+### Install powerline enabled fonts on archlinux:
 ```
 sudo yaourt -S aur/otf-inconsolata-dz-powerline-git
 ```
+source: [Lokaltog: vim powerline](https://github.com/Lokaltog/vim-powerline)
 
-### If you want to use oh-my-zsh :
-[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
+### If you want to use oh-my-zsh:
 ```
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 ```
+source: [Robby Russel: oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
