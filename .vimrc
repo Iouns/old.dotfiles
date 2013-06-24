@@ -105,6 +105,9 @@ colorscheme solarized
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
