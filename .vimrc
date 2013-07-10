@@ -33,7 +33,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -49,12 +49,12 @@ Bundle 'scrooloose/syntastic.git'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
+Bundle 'fholgado/minibufexpl.vim'
 " vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
-
 let g:Powerline_symbols = 'fancy'
 
 " Load pathogen plugin
@@ -107,6 +107,10 @@ let g:solarized_termtrans=1
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+" Catch whitespaces..
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
