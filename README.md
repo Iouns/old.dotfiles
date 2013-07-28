@@ -4,7 +4,6 @@ Here is my basic dotfiles for fun. :)
 ## Basic actions
 Here is my dotfiles for :
  * bash & zsh
-zsh:1: command not found: q
  * vim plugins
  * gitconfig
 
