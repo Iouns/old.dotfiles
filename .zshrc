@@ -7,16 +7,10 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="blinks"
-# hide the “user@hostname” when logged in as yourself on your local machine.
-DEFAULT_USER="iouns"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export EDITOR="vim"
-export LANG="fr_FR.UTF-8"
-export TERM="xterm-256color"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -55,3 +49,8 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ja
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+export GREP_OPTIONS='--color=auto' GREP_COLOR='31'
+export EDITOR="vim"
+export LANG="en_US.UTF-8"
+export TERM="xterm-256color"
