@@ -21,14 +21,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
-if has("autocmd")
-  filetype plugin indent on
-endif
-
-"filetype off                   " required!
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -56,11 +48,6 @@ Bundle 'fholgado/minibufexpl.vim'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 let g:Powerline_symbols = 'fancy'
-
-" Load pathogen plugin
-"runtime bundle/pathogen/autoload/pathogen.vim
-"call pathogen#infect()
-"call pathogen#helptags()
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -111,6 +98,14 @@ cmap w!! w !sudo tee > /dev/null %
 " Catch whitespaces..
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+" Uncomment the following to have Vim load indentation rules and plugins
+" according to the detected filetype.
+filetype off                   " required!
+if has("autocmd")
+  filetype plugin indent on
+endif
+
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
