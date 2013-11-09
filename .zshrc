@@ -28,7 +28,7 @@ ZSH_THEME="blinks"
 [ -x /usr/bin/lesspipe.sh  ] && eval "$(lesspipe.sh)"
 
 # Load ls colors
-eval `dircolors $HOME/.dircolors`
+[ -x /usr/bin/dircolors ] && eval "$(dircolors $HOME/.dircolors)"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -39,7 +39,7 @@ eval `dircolors $HOME/.dircolors`
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rvm ruby vagrant tmux capistrano svn)
+plugins=(git rvm ruby gem rbenv brew vagrant tmux capistrano svn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,9 +47,10 @@ unsetopt correct_all
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java6/bin:/opt/java6/db/bin:/opt/java6/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/qt4/bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# RVM stuffs
+[ -s "$HOME/.rvm/scripts/rvm" ] && export PATH=$PATH:$HOME/.rvm/bin && . "$HOME/.rvm/scripts/rvm"
 
+[ -d $HOME/.rbenv/bin ] && export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init -)"
 export GREP_OPTIONS='--color=auto' GREP_COLOR='31'
 export EDITOR="vim"
 export LANG="en_US.UTF-8"
