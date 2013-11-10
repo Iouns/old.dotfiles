@@ -35,7 +35,13 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'msanders/snipmate.vim'
+
+"vim snipmate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
 Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic.git'
 "Bundle 'Lokaltog/vim-easymotion'
