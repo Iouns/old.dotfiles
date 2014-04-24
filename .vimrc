@@ -43,6 +43,7 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 
 Bundle 'rodjek/vim-puppet'
+Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/syntastic.git'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
