@@ -27,7 +27,6 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-
 " My Bundles here:
 
 " original repos on github
@@ -80,6 +79,11 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Persistent undo settings
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000   " maximum number of changes that can be undone
+set undoreload=1000   " maximum number lines to save for undo on a buffer reload
 
 " Tabs spaces options.
 set nowrap
