@@ -13,6 +13,14 @@
   gad='git add'
   gco='git commit -m'
   gdf='git diff'
+[help]
+  autocorrect = 5
+[core]
+  editor = vim
+[push]
+  default = tracking
+[pull]
+  rebase = true
 [url "git@github.com:"]
   insteadOf = "gh:"
   pushInsteadOf = "github:"
@@ -27,9 +35,3 @@
   insteadOf = "gist:"
 [url "git@heroku.com:"]
   insteadOf = "heroku:"
-[help]
-  autocorrect = 5
-[core]
-  editor = vim
-[push]
-  default = tracking
