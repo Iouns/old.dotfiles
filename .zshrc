@@ -44,13 +44,14 @@ plugins=(git ruby gem rbenv brew bundler rake vagrant tmux capistrano svn docker
 source $ZSH/oh-my-zsh.sh
 
 unsetopt correct_all
+
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java6/bin:/opt/java6/db/bin:/opt/java6/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/qt4/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 
-# RVM stuffs
-[ -s "$HOME/.rvm/scripts/rvm" ] && export PATH=$PATH:$HOME/.rvm/bin && . "$HOME/.rvm/scripts/rvm"
-
+# rbenv
 [ -d $HOME/.rbenv/bin ] && export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init -)"
+
+# Solarized compliant grep color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='31'
 export EDITOR="vim"
 export LANG="en_US.UTF-8"
